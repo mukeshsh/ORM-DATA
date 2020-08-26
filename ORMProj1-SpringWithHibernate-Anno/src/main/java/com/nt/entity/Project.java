@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import org.hibernate.annotations.Type;
 
 @Entity
-public class Project2 implements Serializable {
+public class Project implements Serializable {
 	@Id
 	@Type(type="int")
 	@GeneratedValue(strategy = GenerationType.AUTO)
