@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
 public class CustomerDTO {
 	public CustomerDTO() {
 		System.out.println("CustomerDTO::0-param Constructor");
