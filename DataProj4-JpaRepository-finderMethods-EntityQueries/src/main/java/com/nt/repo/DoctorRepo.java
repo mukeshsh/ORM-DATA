@@ -61,7 +61,16 @@ public interface DoctorRepo extends JpaRepository<Doctor, Integer> {
 	/*//SQL> SELECT D_ID,HOSLOCATION,D_NAME,EMAIL,MOB,PERSONAL_ADDRS,SALARY FROM DOCTOR WHERE D_NAME IS NULL;
 	List<Doctor>findBydNameIsNull();
 	*/
-	//SQL> SELECT D_ID,HOSLOCATION,D_NAME,EMAIL,MOB,PERSONAL_ADDRS,SALARY FROM DOCTOR WHERE D_NAME IS NOT NULL;
-	  Iterable<Doctor> findBydNameIsNotNull();
-	//Iterable<Doctor>findBydNameNotNull();
+	/*SQL> SELECT D_ID,HOSLOCATION,D_NAME,EMAIL,MOB,PERSONAL_ADDRS,SALARY FROM DOCTOR WHERE D_NAME IS NOT NULL;
+	 // Iterable<Doctor> findBydNameIsNotNull();
+	//Iterable<Doctor>findBydNameNotNull();*/
+	/*
+	//SQL> SELECT D_ID,HOSLOCATION,D_NAME,EMAIL,MOB,PERSONAL_ADDRS,SALARY FROM DOCTOR WHERE D_NAME LIKE '_____';
+	Iterable<Doctor> findBydNameLike(String name);
+	*/
+	/*
+	//SQL> SELECT D_ID,HOSLOCATION,D_NAME,EMAIL,MOB,PERSONAL_ADDRS,SALARY FROM DOCTOR WHERE D_NAME LIKE '____%';
+	List<Doctor>findBydNameLike(String chars);
+	*/
+	
 }

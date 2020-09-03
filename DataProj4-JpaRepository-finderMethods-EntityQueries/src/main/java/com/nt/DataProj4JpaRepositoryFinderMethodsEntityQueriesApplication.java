@@ -30,7 +30,9 @@ public class DataProj4JpaRepositoryFinderMethodsEntityQueriesApplication {
 		//docRepo.findBydNameContaining("e").forEach(System.out::println);
 		//docRepo.findBydNameIsNull().forEach(System.out::println);
 		//docRepo.findBydNameNotNull().forEach(System.out::println);
-		docRepo.findBydNameIsNotNull().forEach(System.out::println);
+		//docRepo.findBydNameIsNotNull().forEach(System.out::println);
+		//docRepo.findBydNameLike("____").forEach(System.out::println);
+		//docRepo.findBydNameLike("____%").forEach(System.out::println);
 	}
 
 }
